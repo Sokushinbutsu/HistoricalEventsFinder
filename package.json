@@ -1,0 +1,41 @@
+{
+  "name": "historicaleventsfinder",
+  "version": "0.0.1",
+  "description": "Historical Events finder with json-server and react-paginate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development --watch",
+    "build-prod": "webpack -p --mode production",
+    "start": "json-server --watch data/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sokushinbutsu/HistoricalEventsFinder.git"
+  },
+  "author": "Brian Nelson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sokushinbutsu/HistoricalEventsFinder/issues"
+  },
+  "homepage": "https://github.com/Sokushinbutsu/HistoricalEventsFinder#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "eslint-config-google": "^0.13.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "lodash": "^4.17.14",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-paginate": "^6.3.0"
+  }
+}
