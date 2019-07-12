@@ -43,7 +43,7 @@ class App extends React.Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />{' '}
-        <Page />
+        <Page data={this.state.data} />
       </>
     );
   }
