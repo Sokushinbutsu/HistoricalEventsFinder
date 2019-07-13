@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import Entry from './Entry';
 
-class Page extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  handlePageClick() {}
-  render() {
-    return <Entry data={this.props.data} />;
-  }
-}
+const Page = props => {
+  return <Entry data={props.data} />;
+};
 
 export default Page;
