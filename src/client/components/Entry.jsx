@@ -7,7 +7,12 @@ class Entry extends Component {
   }
   render() {
     let results = this.props.data.map(function(item, index) {
-      return <div key={index}>{item.description}</div>;
+      return (
+        <div key={index}>
+          <b>{new Date(item.date).toString()}</b>
+          <p>{item.description}</p>
+        </div>
+      );
     });
 
     return <ul>{results}</ul>;
